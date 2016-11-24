@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+	<html>
+		<head></head>
+		<title> Soy desarrollador web</title>
+		<body>
+			<form name="Formulario" method="post" action="reception_formulario.php">
+			Nombre: <input type="text" name="nombre" value="Pon tu nombre aqui"><br/>
+			Teléfono:<input type="number" name="telefono" value=""><br/>
+			Email:<input type="text" name="email" value="ejemplo@2pac.com"><br/>
+			Contraseña:<input type="password" name="pass" value="contrasena" required/><br/>
+			Edad: <input type="radio" name="edad" value="Anciano"/>
+					<input type="radio" name="edad" value="Adulto"/>
+					<input type="radio" name="edad" value="Infante"/><br/>
+			Sexo: <input type="checkbox" name="sexo" value="Mujer"/>
+					<input type="checkbox" name="sexo" value="Hombre"/><br/>
+			Ciudad: <select name="Provincia"><br/>
+						<option value="Soria">Soria</option>
+						<option value="Almería">Almería</option>
+					</select>
+		
+			<label for="texto" >Descripción de tí mismo:</label><br/>
+			<textarea rows="28" cols="28" name="texto">		
+			</textarea>
+			
+			<input type="submit" value="Enviar"/>
+			<input type="reset" value="Reestablecer los campos"/><br/>
+		</body>
+	</html>
