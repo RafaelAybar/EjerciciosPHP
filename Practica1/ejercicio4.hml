@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio</title>
+</head>
+<body>
+<form name="Formulario" method="post" action="ejercicio4.php">
+    <table>
+        <tr>
+            <td>
+                Introduce elprimer número (a):
+                <input type="number" name="numa" required>
+                <br>
+                Introduce el segundo número (b):
+                <input type="number" name="numb" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Operaciones a realizar
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="operacion[]" value="1">
+                Obtener la potencia de a elevado a b
+                <br/>
+                <input type="checkbox" name="operacion[]" value="2">
+                Obtener el producto de a por b
+                <br/>
+                <input type="checkbox" name="operacion[]" value="3">
+                Obtener la divisón de a entre b
+                <br/>
+                <input type="checkbox" name="operacion[]" value="4">
+                Obtener el resto de la divisón de a entre b
+                <br/>
+                <input type="checkbox" name="operacion[]" value="5">
+                Obtener el mayor de a y b
+                <br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="Enviar">
+                <input type="reset" name="Reestablecer">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
