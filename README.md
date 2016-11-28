@@ -1,6 +1,7 @@
 # EjerciciosPHP
 Principales funciones:
 * Para comprobar valores vacíos: ```isset($variable)```
+* Para subir archivos: ```is_uploaded_file ($_FILES['imagen']['tmp_name'])```
 * Para Números y operaciones matemáticas:
  * ```sqrt()``` Raíces cuadradas.
  * ```pow()``` Potencias.
