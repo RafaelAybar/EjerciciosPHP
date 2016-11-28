@@ -28,6 +28,7 @@ Principales funciones:
  * ```mysqli_connect("127.0.0.1", "mi_usuario", "mi_contraseña", "mi_bd")``` Conecta a la BD.
  * ```mysqli_close ( mysqli $conexión )``` Desconcecta de la BD.
  * ```mysqli_select_db ( mysqli $link , string $dbname )``` Selecciona la BD.
+ * ```mysqli_free_result()``` Libera la memoria asociada a un resultado
 * Para arrays:
  * ```array()``` Define un array.
  * ```implode(",", $array);``` Separa los elementos del array con comas.
