@@ -1,42 +1,45 @@
 <?php
-        //Definición de variables
-    $num1 = $_POST['num1'];
-    $num2 = $_POST['num2'];
-    $num3 = $_POST['num3'];
-    $mayor = 0;
-    $menor = 0;
-        //Ejercicio
-    if($num1 > $num2){
+	$num1=$_POST["num1"];
+	$num2=$_POST["num2"];
+	$num3=$_POST["num3"];
+echo "El número 1 vale $num1. <br/>";
+echo "El número 2 vale $num2.<br/>";
+echo "El número 3 vale $num3. <br/>";
+if($num1 > $num2){
             if($num1 > $num3){
                     $mayor = $num1;
+		    $mayor2 = $num3;
             }else{
                     $mayor = $num3;
+		    $mayor2 = $num1;
             }
-    }else{
+    }
+
+else{
             if($num2 > $num3){
                     $mayor = $num2;
+		    $mayor2 = $num3;
             }else{
                     $mayor = $num3;
+		    $mayor2 = $num2;
             }
     }
     if($num1 < $num2){
             if($num1 < $num3){
                     $menor = $num1;
-            }else{
-                    $menor = $num3;
             }
-    }else{
+		else{
+                    $menor = $num3;
+           	    }
+   	    }
+	else{
             if($num2 < $num3){
                     $menor = $num2;
             }else{
                     $menor = $num3;
             }
     }
-    if($menor == $mayor){
-            echo "los numeros son iguales";
-    }else{
-            echo "El numero mayor es $mayor";
-            echo "<br><br>";
-            echo "El numero menor es $menor";
-    }
+echo "El número mayor es $mayor.<br/>";
+echo "El segundo número mayor es $mayor2 .<br/>";
+echo "El num menor es $menor.<br/>";
 ?>
