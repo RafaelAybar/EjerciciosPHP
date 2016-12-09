@@ -40,6 +40,6 @@ else{
             }
     }
 echo "El número mayor es $mayor.<br/>";
-echo "El segundo número mayor es $mayor2 .<br/>";
-echo "El num menor es $menor.<br/>";
+echo "El número mediano es $mayor2 .<br/>";
+echo "El número menor es $menor.<br/>";
 ?>
