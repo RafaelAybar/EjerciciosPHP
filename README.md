@@ -32,3 +32,4 @@ Principales funciones:
 * Para arrays:
  * ```array()``` Define un array.
  * ```implode(",", $array);``` Separa los elementos del array con comas.
+ * ```array_replace($base, $reemplazos, $reemplazos2);``` Reemplaza los datos del array por los datos deseados
