@@ -33,3 +33,4 @@ Principales funciones:
  * ```array()``` Define un array.
  * ```implode(",", $array);``` Separa los elementos del array con comas.
  * ```array_replace($base, $reemplazos, $reemplazos2);``` Reemplaza los datos del array por los datos deseados
+ * ```array_splice($arraydef,0,-1);``` Elimina elementos del array en la posición indicada
