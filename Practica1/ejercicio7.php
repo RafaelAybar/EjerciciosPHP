@@ -1,4 +1,16 @@
-<?php
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio6</title>
+        <style>
+            h1 { font-size: 29px; font-family: Verdana; color:  #000000; }
+            h4 { font-size: 20px; font-family: Verdana; color:  #000000; background: #efefef;}
+            td { font-size: 15px; font-family: Verdana; color:  #000000; background: #efefef; }
+            table{ border-collapse: collapse; box-shadow: 8px 8px 16px #cccccc; }
+</style>
+    </head>
+    <body>
+    <?php
 $tabla = "<table border='1'>";
 $tabla .= "<tbody>";
 for($i = 0; $i<10;$i++){
@@ -22,3 +34,5 @@ $tabla .= "</table>";
 
 echo $tabla;
 ?>
+    </body>
+</html>
