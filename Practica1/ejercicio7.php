@@ -5,8 +5,8 @@
         <style>
             h1 { font-size: 29px; font-family: Verdana; color:  #000000; }
             h4 { font-size: 20px; font-family: Verdana; color:  #000000; background: #efefef;}
-            td { font-size: 15px; font-family: Verdana; color:  #000000; background: #efefef; }
-            table{ border-collapse: collapse; box-shadow: 8px 8px 16px #cccccc; }
+            td { font-size: 20px; font-family: Verdana; color:  #000000; background: #efefef; }
+            table{ border-collapse: collapse; box-shadow: 16px 16px 16px #cccccc; }
 </style>
     </head>
     <body>
