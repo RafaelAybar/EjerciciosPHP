@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
-        <title>Ejercicio6</title>
+        <title>Ejercicio 7</title>
         <style>
             h1 { font-size: 29px; font-family: Verdana; color:  #000000; }
             h4 { font-size: 20px; font-family: Verdana; color:  #000000; background: #efefef;}
