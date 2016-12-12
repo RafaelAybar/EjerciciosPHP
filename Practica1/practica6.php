@@ -4,17 +4,13 @@
 	$porcen = $_POST['porcen'];
 	$capital = $_POST['capital'];
 	//Ejercicio
-	if ($capital >= 0 && $tiempo >= 1 && $porcen >=1){
-		echo "El capital inicial es $capital <br/>";
-		echo "El tiempo es $tiempo <br/>";
-		echo "El interés es del $porcen por ciento <br/>";
-		$porcentaje = $porcen / 100;
-		$intanual = $capital * $porcentaje * $tiempo;
+	for ($a=1; $a <= $tiempo ; $a++) {
 
-		echo "El interés anual es $intanual <br/>";
-		$capacumulado = $capital+$intanual;
-		}
-		else {
-			echo "Introduce un valor válido";
-		}
+		$interes = ($capital * $porcen)/100;
+		$capital += ($capital * $porcen)/100;
+
+		echo "El año es: $a</br>";
+		echo "El interes anual obtenido es: $interes</br>";
+		echo "El capital acumulado es: $capital</br>";
+}
 ?>

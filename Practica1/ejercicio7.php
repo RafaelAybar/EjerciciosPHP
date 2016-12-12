@@ -11,7 +11,7 @@
  <body>
      <h4>
         <?php
-    $tabla = "<table border='1'>";
+    $tabla = "<table border='2'>";
     $tabla .= "<tbody>";
     for($i = 0; $i<10;$i++){
         $tabla .= "<tr>";
