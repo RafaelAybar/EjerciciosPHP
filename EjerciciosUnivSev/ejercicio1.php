@@ -17,6 +17,8 @@
     elseif (isset($pesetae)) {
         echo "Has seleccionado la conversión de pesetas a euros </br>";
         $prod1 = (float) $cantii / 166.38;
+        //Redondeamos con la funcion round
+        $redond = round($prod1, 2);
         echo "La cantidad resultante es $prod1 €";  
     }
     elseif (!$pesetae && !$europes){
