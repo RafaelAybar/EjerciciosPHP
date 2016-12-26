@@ -12,6 +12,7 @@ Principales funciones:
  * ```bin2hex()``` Convierte de binario a hexadecimal.
  * ```abs()``` Valor absoluto.
  * ```hex2bin()``` Convierte hexadecimal a binario.
+ * ```round($numero,2)``` Redondea los valores con la precisión decimal del 2º parámetro.
 * Para generar números aleatorios:
  * ```rand()``` (poco eficiente, antiguo).
  * ```mt_rand()``` (recomendado).
