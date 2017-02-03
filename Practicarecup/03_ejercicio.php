@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title> Programación en PHP</title>
+        <title> Mi primer script en PHP</title>
     </head>
 <body>
     <?php
