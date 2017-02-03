@@ -31,6 +31,7 @@
      else {
          echo "No estamos usando nada";
      }
+     echo $_SERVER['DOCUMENT_ROOT']; 
     ?>
 </body>
 </html>
