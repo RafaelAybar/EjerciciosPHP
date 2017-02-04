@@ -18,8 +18,8 @@ Principales funciones:
  * ```mt_rand()``` (recomendado).
 * Para cadenas:
   * ```substr()```
-  * ```strlen()``` 
-  * ```substr_count()``` Cuenta cuántos caracteres hay.
+  * ```strlen()``` Cuenta cuántos caracteres hay.
+  * ```substr_count()``` 
   * ```trim()``` Elimina los espacios en blanco antes y después de la cadena.
 * Para cookies:
  * ```setcookie(nombredelagalleta,nombre, time()+cantidadX)```
