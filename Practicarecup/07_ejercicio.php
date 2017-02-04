@@ -25,6 +25,10 @@
     $num2oct = 013234;
     $x = $num1oct+$num2oct;
     echo "La suma es $x </br>";
+    //apartado 5
+    $nucec = 288;
+    $nuoc = decoct(288);
+    echo "El número decimal es $nucec , y el octal tras pasar por la función es $nuoc";
     ?>
 </body>
 </html>
