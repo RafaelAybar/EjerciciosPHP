@@ -44,12 +44,13 @@
     $v3 = (int)$var1;
     $v4 = (int)$var2;
     $prdu = $v3*$v4;
-    echo "El resultado es $prdu";
+    echo "El resultado es $prdu </br>";
     //Apartado 8
     $x2 = (int) 8.5+6;
     $y = (double) 8878.3434;
     $z= (string) 7788745;
-    $h =(bool) 3/2; 
+    $h =(bool) 3/2;
+    echo"Las variables son $x2 $y $z $h";
     ?>
 </body>
 </html>
