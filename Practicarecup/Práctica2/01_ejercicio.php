@@ -20,7 +20,7 @@
     </table>
     </form>
         <?php
-            error_reporting(E_ALL);
+            error_reporting(E_ERROR | E_WARNING | E_PARSE);
             $a = $_POST['a'];
             $b = $_POST['b'];
             //Apartado 1
@@ -51,29 +51,73 @@
                 echo "B debe ser mayor que A </br>";
             }
             //Apartado 7
-            $ope1 = (max($a,$b)* 5)/(min($a,$b));
-            echo "$ope1 </br>";
+            if ($a > $b) {
+                $ope1 = $a*5 / $b ;
+                echo "El resultado es $ope1 </br>";
+            }
+            elseif ($b>$a) {
+                $ope2 = $b *5 / $a;
+                echo "El resultado es $ope2 </br>";
+            }
+            else {
+                echo "Son iguales </br>";
+            }
             //Apartado 8
             $div1 = (int) $a / $b * 0.66666;
             echo "El entero de la división es $div1 </br>";
             //Apartado 9
             $div2 = (float) $a / $b * 0.66666;
             echo "El resultado de la división es $div2 </br>";
-            if ($a >= $b) {
-                $difact = $a / gmp_fact($b);
-                $redon = round($difact);
-                echo "El resultado es $redon </br>";
-            } else {
-                $difact2 = $b / gmp_fact($a);
-                $redon2= round($difact2);
-                echo "El resultado es $redon2 </br>";
+            // Calculamos factorial de a
+            function factorial($a) {          
+            if ($a < 2) { 
+                return 1; 
+                } else { 
+                    return ($a * factorial($a-1)); 
+                } 
             }
+            $facta = factorial($a);
+            //Calculamos el factorial de b
+           function factorial2($b) {          
+            if ($b < 2) { 
+                return 1; 
+                } else { 
+                    return ($b * factorial($b-1)); 
+                } 
+            }
+            $factb = factorial2($b);
             //Apartado 10
+            if ($a >= $b) {
+                $ofact = $a / $factb;
+                $reda = round($ofact,2);
+                echo "El resulado de la división es  $reda </br>";
+            }
+            else{
+                $ofact2 = $b / $facta;
+                $redb = round($ofact2,2);
+                echo "El resulado de la división es  $redb </br>";
+            }
+            //Apartado 11
             $nurand = mt_rand(min($a,$b),max($a,$b));
             echo "El número aleatorio es $nurand </br>";
-            //Apartado 11
+            //Apartado 12
             $uma = min($a,$b)+max($a,$b);
             echo "La suma es $uma </br>";
-        ?>
+            //Apartado 13        
+                $sum = min($a,$b) + max($a,$b);
+                echo "La suma de máximo y mínimo es $sum </br>";
+            //Apartado 14
+            $sumcos = cos($a)+cos($b);
+            echo "La suma de los cosenos es $sumcos </br>";
+            //Apartado 15
+                $i = 0;
+            while ($i <= 100) {
+                $i++; 
+                $a = $i+1;
+                $b = $i+1;
+                $ecu = sqrt(pow($a,3))+($b/pow($a,$b))+$b - (2*$a);
+                echo "$ecu </br>";
+            }
+    ?>
     </body>
 </html> 
