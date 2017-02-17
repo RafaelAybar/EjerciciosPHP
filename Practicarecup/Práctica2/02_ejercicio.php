@@ -8,7 +8,6 @@
         <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <table>
             <tr>
-                <td> Mostrar imagen<input type="image" name="imagen"></td>
                 <td>Subir rchivos <input type="file" name="subir"></td>
                 <td>Hora <input type="time" name="hora"> </td>
             </tr>
@@ -31,7 +30,7 @@
                         <select multiple name="coloroj[]">
                         <option value="marrones">Marrones</option>
                         <option value="verdes">Verdes</option>
-                        <option value="negros">Mercedes</option>
+                        <option value="negros">Negros</option>
                         <option value="azules">Azules</option>
                 </select>
                 </td>
@@ -57,8 +56,6 @@
             </tr>
         </table>
         <?php
-            
-           $imagen = $_POST['imagen'];
             $subir = $_POST['subir'];
             $hora = $_POST['hora'];
             $ape = $_POST['ape'];
@@ -71,14 +68,16 @@
             $altura = $_POST['alt'];
             $fenac = $_POST['fenac'];
             $colorfav = $_POST['color'];
+            $coloroj = $_POST['coloroj'];
             $hobbies = implode($_POST['hobby']);
             $sex = implode($_POST['sex']);
             $coment = $_POST['texto'];
-            if (isset ($imagen) && isset($subir) && isset($hora) && isset($altura) && isset($ape)&& isset($fenac) && isset($pass)&& isset($peso) && isset($colorfav)&& isset($coloroj)&& isset($telefono)&& isset($coment)&&isset($sex)) {
-                echo " $imagen</br>";
-                echo "$subir</br>";
+            if (isset($subir) && isset($hora) && isset($altura) && isset($ape)&& isset($fenac) && isset($pass)&& isset($peso) && isset($colorfav)&& isset($coloroj)&& isset($telefono)&& isset($coment)&&isset($sex)) {
+                echo " Has subido $subir</br>";
                 echo "Fecha nacimiento $fenac</br>";
-                echo "$ape</br>";
+                echo "Tu peso es $peso </br>";
+                echo "Tu altura es $altura </br>";
+                echo "Tu nombre completo es $ape</br>";
                 echo "El nombre de usuario es$usuario</br>";
                 echo "La contraseña es $pass</br>";
                 echo "El campo oculto es  $oculto</br>";
@@ -87,7 +86,10 @@
                 echo "La altura es $altura </br>";
                 echo "La hora introducda es $hora</br>";
                 echo "El color favorito es $colorfav</br>";
-                echo "El color de ojos es $coloroj</br>";
+                foreach($coloroj as $i) 
+                    {
+                    echo "Tu color de ojos es: ".$i."</br>";
+                    } 
                 echo "Tu sexo es $sex</br>";
                 echo "Tu opinión es $coment</br>";
             }
