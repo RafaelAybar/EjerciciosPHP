@@ -58,23 +58,23 @@
         </table>
         <?php
             
-            $imagen = $_GET['imagen'];
-            $subir = $_GET['subir'];
-            $hora = $_GET['hora'];
-            $ape = $_GET['ape'];
-            $usuario = $_GET['usu'];
-            $pass = $_GET['pass'];
+           $imagen = $_POST['imagen'];
+            $subir = $_POST['subir'];
+            $hora = $_POST['hora'];
+            $ape = $_POST['ape'];
+            $usuario = $_POST['usu'];
+            $pass = $_POST['pass'];
             $oculto = $pass;
-            $email = $_GET['email'];
-            $telefono = $_GET['telef'];
-            $peso = $_GET['peso'];
-            $altura = $_GET['alt'];
-            $fenac = $_GET['fenac'];
-            $colorfav = $_GET['color'];
-            $coloroj = $_GET['coloroj'];
-            $hobbies = $_GET['hobby'];
-            $sex = $_GET['sex'];
-            $coment = $_GET['texto'];
+            $email = $_POST['email'];
+            $telefono = $_POST['telef'];
+            $peso = $_POST['peso'];
+            $altura = $_POST['alt'];
+            $fenac = $_POST['fenac'];
+            $colorfav = $_POST['color'];
+            $coloroj = $_POST['coloroj'];
+            $hobbies = $_POST['hobby'];
+            $sex = $_POST['sex'];
+            $coment = $_POST['texto'];
             if (isset ($imagen) && isset($subir) && isset($hora) && isset($altura) && isset($ape)&& isset($fenac) && isset($pass)&& isset($peso) && isset($colorfav)&& isset($coloroj)&& isset($telefono)&& isset($coment)&&isset($sex)) {
                 echo " $imagen</br>";
                 echo "$subir</br>";
