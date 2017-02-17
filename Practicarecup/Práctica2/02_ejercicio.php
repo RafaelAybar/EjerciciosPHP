@@ -71,9 +71,8 @@
             $altura = $_POST['alt'];
             $fenac = $_POST['fenac'];
             $colorfav = $_POST['color'];
-            $coloroj = $_POST['coloroj'];
-            $hobbies = $_POST['hobby'];
-            $sex = $_POST['sex'];
+            $hobbies = implode($_POST['hobby']);
+            $sex = implode($_POST['sex']);
             $coment = $_POST['texto'];
             if (isset ($imagen) && isset($subir) && isset($hora) && isset($altura) && isset($ape)&& isset($fenac) && isset($pass)&& isset($peso) && isset($colorfav)&& isset($coloroj)&& isset($telefono)&& isset($coment)&&isset($sex)) {
                 echo " $imagen</br>";
