@@ -5,7 +5,7 @@
         <title> Operaciones</title>
     </head>
     <body>
-    <p> Para comprobar que los valores introducidos, especificiamos esa condición en el formulario</p>
+    <p> Para comprobar que los valores introducidos, especificamos esa condición en el formulario</p>
     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
     <table>
         <tr>
