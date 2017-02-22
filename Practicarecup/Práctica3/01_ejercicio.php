@@ -66,4 +66,13 @@
             }
             $cincos = cincos($arrayalet);
         echo "La cantidad de cincos es ".$cincos."</br>";
+    //Apartado 7
+          function divisores($arrayalet) { 
+         $i = 0; 
+         foreach ($array as $x) 
+                    if ($x % 2 == 0) $i++;
+                    echo "$x";
+         return $i; 
+    }
+    $div2= divisores($arrayalet);
 ?>
