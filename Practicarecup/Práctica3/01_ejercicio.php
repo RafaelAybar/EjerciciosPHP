@@ -55,7 +55,7 @@
             if ($x = 3); 
             return $i; 
             }
-            $cincos = treses($arrayalet);
+            $treses = treses($arrayalet);
         echo "La cantidad de treses es ".$treses."</br>";
 
         function cincos(array $arrayalet) { 
