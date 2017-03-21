@@ -55,7 +55,7 @@
             if ($x = 3); 
             return $i; 
             }
-            $cincos = treses($arrayalet);
+            $treses = treses($arrayalet);
         echo "La cantidad de treses es ".$treses."</br>";
 
         function cincos(array $arrayalet) { 
@@ -67,12 +67,23 @@
             $cincos = cincos($arrayalet);
         echo "La cantidad de cincos es ".$cincos."</br>";
     //Apartado 7
-          function divisores($arrayalet) { 
-         $i = 0; 
-         foreach ($array as $x) 
-                    if ($x % 2 == 0) $i++;
-                    echo "$x";
-         return $i; 
-    }
-    $div2= divisores($arrayalet);
+         echo "Los números divisores de 2 son: ";
+       foreach ($arrayalet as $a)
+            if($a % 2 == 0)
+                print_r($a."\n");
+echo "</br>";
+//Apartado 8
+echo "Los números divisores de 5 son ";
+ foreach ($arrayalet as $a)
+            if($a % 5 == 0)
+                print_r($a."\n");
+echo "</br>";
+//Apartado 9
+$cadena = implode($arrayalet);
+function contar4( $cadena )
+{
+    return preg_match_all( "/[4]/", $cadena);
+}
+$numero4 = contar4($cadena);
+echo "El número 4 aparece $numero4 veces </br>";
 ?>
