@@ -1,17 +1,18 @@
 <?php
     //un for para las filas y otro para las columnas
     //no he conseguido ponerlo en forma de tabla
+   
+for ($b=1;$b<=10;$b++)
+   {
+       for ($a=10;$a>=$b;$a--)
+   {echo '#';}
+    echo '</br>';
+   }
+
    for ($b=1;$b<=10;$b++)
    {
        for ($a=1;$a<=$b;$a++)
    {echo '#';}
     echo '</br>';
    }
-    echo "hola"."</br>";
-   for ($b=1;$b<=10;$b++)
-   {
-       for ($a=1;$a<=$b;$a++)
-   {echo '#';}
-    echo '</br>';
-   } 
 ?>
