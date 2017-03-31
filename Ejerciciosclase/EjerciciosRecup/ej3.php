@@ -7,7 +7,9 @@
    {echo '#';}
     echo '</br>';
    }
-    echo "hola"."</br>";
+   
+    echo "</br>";
+
    for ($b=1;$b<=10;$b++)
    {
        for ($a=1;$a<=$b;$a++)
