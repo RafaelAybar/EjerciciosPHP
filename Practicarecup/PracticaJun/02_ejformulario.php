@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="default.css">
-        <title></title>
+        <title>Formulario</title>
+         <style type="text/css">
+            h2 { font-size: 29px; font-family: Verdana; color:  #000000; }
+            td { font-size: 15px; font-family: Verdana; color:  #000000; background: #efefef; }
+            table{ border-collapse: collapse; background:#efefef}
+            #submit {font-size:35px; font-weight: bold; padding: 46px; margin: 10px 10px 20px 0; background: #80de80;
+                     border-radius: 8px 8px 8px 8px; }
+        </style>
     </head>
     <body>
         <center>
@@ -40,7 +45,7 @@
                      <td>Resumen: <input type="file" name="resumen" required></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Enviar"></td>
+                    <td><input type="submit" value="Enviar" id="submit"></td>
                 </tr>
              </table>
     </center>
