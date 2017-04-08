@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Calcular valores </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Calcula el volumen de un prisma rectangular</h1>
+        <form method="post" action="04_ejercicio.php">
+            <table border="1">
+            <tr>
+                <td><h2>Prisma rectangular</h2>
+                    <br>
+                    <br>
+                    Base: <input type="number" name="base" step="any" required><br>
+                    Altura: <input type="number" name="altura" step="any" required><br>
+                    Anchura: <input type="number" name="anchura" step="any" required>
+                </td>
+                <td><img src="area.png" alt="Imagen" style="width:304px;height:228px;">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="opcion" value="sinfu" checked> Cálculo sin funciones.<br>
+                    <input type="radio" name="opcion" value="fret"> Función con return.<br>
+                    <input type="radio" name="opcion" value="fref"> Función por referencia.<br>
+                    <input type="radio" name="opcion" value="frecu" > Función recursiva.
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Obtener Volumen"></td>
+            </tr>
+        </table>
+        </form>
+        
+    </body>
+</html>
