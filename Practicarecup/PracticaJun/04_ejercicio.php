@@ -20,7 +20,9 @@
                 echo "El producto una función con return es: ".calreturn($base,$altura,$anchura);
             }
             elseif ($opcion == "fref") {
-                echo "En progreso";
+                function calref($base,$altura,$anchura){
+                    
+                }
             }
             elseif ($opcion == "frecu") {
                 

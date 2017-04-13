@@ -57,8 +57,11 @@
     $texto = trim($_POST['texto']);
     $archivo = $_POST['resumen'];
     $radio = $_POST['radio'];
-//stripslashes para evitar que cuelen código
-if (isset($nombre) && isset($correo) && isset($texto) && isset($resumen) && isset($radio)){
+if (isset($nombre) && isset($correo) && isset($texto) && isset($archivo) && isset($radio)){
+    //sripcslashes evita que nos cuelen código
+    stripcslashes($nombre);
+    stripcslashes($correo);
+    stripcslashes($texto);
     echo "El nombre es $nombre, tu email es $correo,has seleccionado $radio, has subido el archivo $archivo y el texto introducido es:"."</br>";
 echo "$texto";
 }
