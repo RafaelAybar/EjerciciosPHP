@@ -20,10 +20,13 @@
                 echo "El producto una función con return es: ".calreturn($base,$altura,$anchura);
             }
             elseif ($opcion == "fref") {
-                function calref($base,$altura,$anchura){
-                    
+                function &calcref($base,$altura,$anchura){
+                   $productoref=$base*$altura*$anchura;
+                    return $productoref;
                 }
-            }
+                $productoref = &calcref($base,$altura,$anchura);
+                echo "El producto usando referencia es $productoref";
+                            }
             elseif ($opcion == "frecu") {
                 
                 function calcrecu($base,$altura,$anchura){
