@@ -48,10 +48,8 @@
                     <td><input type="submit" value="Enviar" id="submit"></td>
                 </tr>
              </table>
-    </center>
-    </body>
-</html>
-<?php
+             <?php
+    error_reporting(E_ERROR | E_WARNING | E_PARSE);
     $nombre = trim($_POST['nom']);
     $correo = trim($_POST['correo']);
     $texto = trim($_POST['texto']);
@@ -69,3 +67,6 @@ else {
     die("No has introducido los campos obligatorios");
 }
 ?>
+    </center>
+    </body>
+</html>
