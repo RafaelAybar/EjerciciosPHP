@@ -1,5 +1,6 @@
 # EjerciciosPHP
 Principales funciones:
+* Para comprobar que una variable está definida: ```isset($variable)```
 * Para comprobar valores vacíos: ```empty($variable)```
 * Para fechas:
   * ```strtotime()``` Convierte una fecha en formato inglés a UNIX
