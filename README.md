@@ -1,6 +1,6 @@
 # EjerciciosPHP
 Principales funciones:
-* Para comprobar valores vacíos: ```isset($variable)```
+* Para comprobar valores vacíos: ```empty($variable)```
 * Para fechas:
   * ```strtotime()``` Convierte una fecha en formato inglés a UNIX
 * Para subir archivos: ```is_uploaded_file ($_FILES['imagen']['tmp_name'])```
