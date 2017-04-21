@@ -6,7 +6,7 @@
             h2 { font-size: 29px; font-family: Verdana; color:  #000000; }
             td { font-size: 15px; font-family: Verdana; color:  #000000; background: #efefef; }
             table{ border-collapse: collapse; background:#efefef}
-            #submit {font-size:35px; font-weight: bold; padding: 46px; margin: 10px 10px 20px 0; background: #80de80;
+            #submit {font-size:35px; font-weight: bold; padding: 46px; margin: 10px 10px 20px 0; background: yellow;
                      border-radius: 8px 8px 8px 8px; }
         </style>
     </head>
@@ -43,7 +43,7 @@ if (isset($nombre) && isset($correo) && isset($texto) && isset($archivo) && isse
     echo "$texto";
 }
 else {
-    die("Debes introducir todos los campos");
+    echo"<h1>"."Debes introducir todos los campos"."</h1>";
 }
 ?>
         <h2>Formulario validado por campos</h2>
