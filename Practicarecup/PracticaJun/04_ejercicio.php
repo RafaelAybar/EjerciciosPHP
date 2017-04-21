@@ -8,7 +8,7 @@
         if (is_numeric($base) && is_numeric($altura) && is_numeric($anchura)) {
             if ($opcion == "sinfu" ) {
                 $producto = $base * $altura * $anchura;
-                echo "El producto es $producto";
+                echo "El producto calculado sin funciones es $producto";
             }
             elseif ($opcion == "fret" ) {
                 //declaramos la función
@@ -20,12 +20,12 @@
                 echo "El producto una función con return es: ".calreturn($base,$altura,$anchura);
             }
             elseif ($opcion == "fref") {
-                function &calcref($base,$altura,$anchura){
-                   $productoref=$base*$altura*$anchura;
-                    return $productoref;
-                }
-                $productoref = &calcref($base,$altura,$anchura);
-                echo "El producto usando referencia es $productoref";
+                function calcref($base,$altura,$anchura, &$resultado){
+                        $resultado=$base*$altura*$anchura;
+                    }
+                    $resultado = null;
+                    calcref($base,$altura,$anchura, $resultado);
+                    echo "El volumen calculado por referncia es ".$resultado;
                             }
             elseif ($opcion == "frecu") {
                 
