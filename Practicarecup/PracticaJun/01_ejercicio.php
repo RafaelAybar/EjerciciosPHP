@@ -46,12 +46,13 @@ while ($d <= 5) {
 echo "</ul>";
 echo "</br>";
 
-echo "Lista6: bucle for;"."</br>";
+echo "Lista6: bucle for:"."</br>";
 echo "<dl>";
 for ($o=1; $o <=6 ; $o++) {
-    $num = 1;
+    $num = $o;
     echo "<dt>"."Modulo $o";
     echo "<dd>"."Nota $num"."</dd>";
-}
+    } 
+   
 echo "</dl>";
 ?>
