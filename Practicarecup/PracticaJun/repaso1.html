@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Tabla de notas</h1>
+        <form action="repaso1.php" method="post">
+            <table>
+                <tr>
+                    <td><h3>Nombre</h3></td><td><h3>Nota obtenida</h3></td>
+                </tr>
+                <tr>
+                    <td>Juan</td><td> <input type="number" pattern="^([0-9]|10)$" step="0.01"  name="juan" required></td>
+                </tr>
+                <tr>
+                    <td>María</td><td> <input type="number" pattern="^([0-9]|10)$" step="0.01" name="maria" required></td>
+                </tr>
+                <tr>
+                    <td>Jose</td><td> <input type="number" pattern="^([0-9]|10)$" step="0.01" name="jose" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Enviar"></td><td><input type="reset" value="Reestablecer"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
