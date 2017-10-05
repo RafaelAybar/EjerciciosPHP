@@ -1,7 +1,9 @@
 <?php
     //Declaración
-    $a = 3;
+    $a = (real) 3;
+    //Se puede cambiar usando settype
     echo "$a   <br>";
+    
     //Tipo
     //Ámbito == lugar donde puedes acceder a la variable
     //Variables predefinidas ---`
@@ -55,5 +57,9 @@
     print $$color;
     print ${$color};
     print $rojo;
-
+    echo "<br>";
+    echo gettype($a)." ";
+    #MANDAR VARIABLES EN URL:
+    #Las variables que se utilizan son $a = $_GET['a'];
+   
 ?>
