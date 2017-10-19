@@ -46,4 +46,8 @@ echo "<br>";
 $array =array(1 =>2,2,3); //índice => valor
 print_r($array);
 // array_values(array) almacena los valores en otro escalars
+//in_arrray(valor,array) busca valores dentro de un array
+//array_inverse, le da la vuelta al array
+//internamente un string se almacena como array, por lo que podemos recorrerla, pero 
+//no tiene la misma estructura.
 ?>
