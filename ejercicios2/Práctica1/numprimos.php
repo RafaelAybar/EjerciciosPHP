@@ -1,7 +1,7 @@
 <?php
     define ("verdadero",1);
     define("falso",0);
-    $numero = 7;
+
     function esprimo  ($numero) //cabecera + parámetros formales
     {
         $divisor = 2;
