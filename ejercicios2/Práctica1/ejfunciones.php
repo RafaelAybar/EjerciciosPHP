@@ -18,7 +18,7 @@
     echo "<br>";
     */
     // Calcular MCDivisor de 2 positivos
-$num1 = 120;
+/*$num1 = 120;
 $num2 = 420;
     function mcd($num1,$num2){
        if ($num1 > $num2) {
@@ -39,6 +39,44 @@ $num2 = 420;
        return $mcd;
     }
     echo "El Máximo Común Divisor es ".mcd($num1,$num2)." <br>";
-    //Transformar carácteres en mayúsculas
+  */  
+    //Transformar carácteres en mayúsculasS
+    $cadena = "hola";
+    $aux = 0;
+    //Generamos un array con minúsculas y otro con mayúsculas
+    
+    //print_r($arrayminus);
+    echo "<br>";
+    
+    //print_r($arraymayus);
+function sustituirletra($cadena){
+    for ($i=a; $i <=z; $i++) {
+        $arrayminus[$aux]="$i";
+        if ($aux == 25){
+            break;
+        }
+        else {
+            $aux++;
+        }
+        }
+        $auxx = 0;
+    for ($o=A; $o <=Z; $o++) {
+            $arraymayus[$auxx]="$o";
+            if ($auxx == 25){
+                break;
+            }
+            else {
+                $auxx++;
+            }
+            }
+
+    for ($w=0; $w <strlen($cadena) ; $w++) { 
+        if (in_array($cadena[$w],$arrayminus)) { //Comprobamos que los carácteres sean alfabéticos
+        $cadena[$w]= $arraymayus[array_search($cadena[$w],$arrayminus)];//obtenemos el índece del array
+        }
+    }
+    return $cadena;
+}
+echo sustituirletra($cadena);
     //Seleccionar una letra y contar el nº de veces que aparece en una cadena
 ?>
