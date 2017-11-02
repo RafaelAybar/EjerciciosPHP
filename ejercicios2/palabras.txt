@@ -1,0 +1,4 @@
+zapato
+vaca
+casa
+abeja
