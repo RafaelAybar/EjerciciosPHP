@@ -4,7 +4,7 @@
         $f = fopen('palabras.txt', 'r+');
         //Guardamos el contenido del array
         
-        while (!eof($f)) {
+        while (!feof($f)) {
             $linea = fgets($f);
             echo "$linea";
         }
@@ -15,12 +15,12 @@
     }
 
     //Mostrar en pantalla el fichero ordenado alfabéticamente
-    $fichero = fopen('palabras.txt','r+');
-    $fich = file($fichero);
-    sort($fich);
-    foreach ($fich as $key => $value) {
-        echo $value;
-    }
+    //$fichero = fopen('palabras.txt','r+');
+    //$fich = file($fichero);
+    //sort($fich);
+    //foreach ($fich as $key => $value) {
+        //echo $value;
+    //}
     // crear una función llamada contar(fichero,caracter) que muestre en pantalla el numero de veces que caracter aparece en el fichero
 
 ?>
