@@ -27,4 +27,5 @@ $consulta4 -> close();
 $consulta5 -> close();
 $conexion -> close();
 //4- Hacer un formulario para dado un alumno (dni) mostrar en tabla nombre,asig,nota,aprobado
+// El formulario está el el fichero formulario.html, que apunta a ej4.php
 ?>
