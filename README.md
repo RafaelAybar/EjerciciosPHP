@@ -45,7 +45,7 @@ Principales funciones:
   * ```implode(",", $array);``` Separa los elementos del array con comas.
   * ```array_replace($base, $reemplazos, $reemplazos2);``` Reemplaza los datos del array por los datos deseados
   * ```array_splice($arraydef,0,-1);``` Elimina elementos del array en la posición indicada
-*Constantes y variables superglobales útiles:
+* Constantes y variables superglobales útiles:
     * ```$_POST``` Recibe los datos que el formulario le envíe por POST.
     * ```$_GET``` Recibe los datos que el formulario le envíe por GET.
     * ```$_SERVER[DOCUMENT_ROOT]``` Indica la raíz del servidor web. muy útil para evitar porblemas de rutas.
