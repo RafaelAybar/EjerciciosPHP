@@ -39,12 +39,12 @@ Principales funciones:
  * ```mysqli_select_db ( mysqli $link , string $dbname )``` Selecciona la BD.
  * ```mysqli_free_result()``` Libera la memoria asociada a un resultado
 * Para arrays:
- * ```array()``` Define un array.
- * ```array_combine($array1,$array2)``` Da lugar a un array nuevo con los valores de array1 como índice del nuevo array, y los valores del array 2 como nuevos valores.
-  * ```in_array("cadena", $array )``` Devuelve verdadero o falso, si la cadena está o no en el array introducido.
-  * ```implode(",", $array);``` Separa los elementos del array con comas.
-  * ```array_replace($base, $reemplazos, $reemplazos2);``` Reemplaza los datos del array por los datos deseados
-  * ```array_splice($arraydef,0,-1);``` Elimina elementos del array en la posición indicada
+   * ```array()``` Define un array.
+   * ```array_combine($array1,$array2)``` Da lugar a un array nuevo con los valores de array1 como índice del nuevo array, y los valores del array 2 como nuevos valores.
+   * ```in_array("cadena", $array )``` Devuelve verdadero o falso, si la cadena está o no en el array introducido.
+   * ```implode(",", $array);``` Separa los elementos del array con comas.
+   * ```array_replace($base, $reemplazos, $reemplazos2);``` Reemplaza los datos del array por los datos deseados
+   * ```array_splice($arraydef,0,-1);``` Elimina elementos del array en la posición indicada
 * Constantes y variables superglobales útiles:
     * ```$_POST``` Recibe los datos que el formulario le envíe por POST.
     * ```$_GET``` Recibe los datos que el formulario le envíe por GET.
