@@ -9,6 +9,7 @@ Principales funciones:
   * ```is_readable("$rutacompletaarchivo")``` Comprueba que el archivo se puede leer
   * ```is_writable("$rutacompletaarchivo")``` Comprueba que en el archivo se puede escribir.
   * ```fopen("$rutacompletaarchivo", "modo(r lectura, w escritura)")``` Abre un fichero en el modo deseado
+  * ```fclose("$rutacompletaarchivo")``` Cierra el archivo que se ha abierto anteriormente.
   * ```file("$rutacompletaarchivo")``` Vuelca el contenido del fichero en cuestión a un array.
 * Para Números y operaciones matemáticas:
   * ```sqrt()``` Raíces cuadradas.
