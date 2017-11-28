@@ -5,22 +5,22 @@ Principales funciones:
 * Para fechas:
   * ```strtotime()``` Convierte una fecha en formato inglés a UNIX
 * Para archivos:
- * ```is_uploaded_file ($_FILES['imagen']['tmp_name'])``` Comprueba que se subió un archivo
- * ```is_readable("$rutacompletaarchivo")``` Comprueba que el archivo se puede leer
- * ```is_writable("$rutacompletaarchivo")``` Comprueba que en el archivo se puede escribir.
- * ```fopen("$rutacompletaarchivo", "modo(r lectura, w escritura)")``` Abre un fichero en el modo deseado
- * ```file("$rutacompletaarchivo")``` Vuelca el contenido del fichero en cuestión a un array.
+  * ```is_uploaded_file ($_FILES['imagen']['tmp_name'])``` Comprueba que se subió un archivo
+  * ```is_readable("$rutacompletaarchivo")``` Comprueba que el archivo se puede leer
+  * ```is_writable("$rutacompletaarchivo")``` Comprueba que en el archivo se puede escribir.
+  * ```fopen("$rutacompletaarchivo", "modo(r lectura, w escritura)")``` Abre un fichero en el modo deseado
+  * ```file("$rutacompletaarchivo")``` Vuelca el contenido del fichero en cuestión a un array.
 * Para Números y operaciones matemáticas:
- * ```sqrt()``` Raíces cuadradas.
- * ```pow()``` Potencias.
- * ```decbin()``` Convierte decimal a binario.
- * ```dechex()``` Convierte de decimal a hexadecimal.
- * ```bin2hex()``` Convierte de binario a hexadecimal.
- * ```abs()``` Valor absoluto.
- * ```hex2bin()``` Convierte hexadecimal a binario.
- * ```round($numero,2)``` Redondea los valores con la precisión decimal del 2º parámetro.
+  * ```sqrt()``` Raíces cuadradas.
+  * ```pow()``` Potencias.
+  * ```decbin()``` Convierte decimal a binario.
+  * ```dechex()``` Convierte de decimal a hexadecimal.
+  * ```bin2hex()``` Convierte de binario a hexadecimal.
+  * ```abs()``` Valor absoluto.
+  * ```hex2bin()``` Convierte hexadecimal a binario.
+  * ```round($numero,2)``` Redondea los valores con la precisión decimal del 2º parámetro.
 * Para generar números aleatorios:
- * ```mt_rand()``` (recomendado).
+  * ```mt_rand()``` (recomendado).
 * Para cadenas:
   * ```substr($cadena, 1,2 )``` Devuelve los caracteres que estén en las posiciones indicadas.
   * ```str_replace("cadena a buscar","cadena reemplazo", $cadenadondesebusca)``` Busca y reemplaza partes de una cadena
